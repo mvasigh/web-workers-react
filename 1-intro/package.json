@@ -1,0 +1,15 @@
+{
+  "name": "1-intro",
+  "version": "1.0.0",
+  "description": "Basic example of Web Workers",
+  "main": "index.html",
+  "author": "Mehdi Vasigh <mehdi.vasigh@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
