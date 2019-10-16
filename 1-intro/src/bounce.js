@@ -21,7 +21,7 @@ function bounce() {
   // update the position
   y += v;
   v += a;
-  if (y > canvas.height - BALL_RADIUS) {
+  if (y > canvas.height - BALL_RADIUS && v > 0) {
     v *= -.95
   }
 
