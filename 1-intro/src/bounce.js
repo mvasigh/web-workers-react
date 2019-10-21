@@ -3,6 +3,8 @@ const ctx = canvas.getContext('2d');
 
 const BALL_RADIUS = 20;
 
+canvas.width = BALL_RADIUS * 2;
+
 let x = canvas.width / 2;
 let y = canvas.height - 150;
 let v = 0;

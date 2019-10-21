@@ -17,6 +17,7 @@ form.addEventListener('submit', e => {
   const endTime = performance.now();
   const time = (endTime - startTime).toFixed(2)
   display.textContent = `Done! Result: ${result}, Time: ${time} ms`;
+  input.value = '';
 });
 
 bounce();
