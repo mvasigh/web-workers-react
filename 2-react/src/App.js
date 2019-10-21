@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Title, Bounce, Display, InputForm } from './components';
 
 function App() {
+  const [result, setResult] = useState();
+  const [time, setTime] = useState();
+
   const handleSubmit = (data, e) => {
     // Let's do this in a worker!
     console.log(`Calculating at position ${data.position}...`);
@@ -9,8 +12,13 @@ function App() {
 
   return (
     <>
-      <Title>Horrible Fib in ✨React✨</Title>
-      <Display />
+      <Title>
+        Horrible Fib in{' '}
+        <span role="img" aria-label="React with sparkles">
+          ✨React✨
+        </span>
+      </Title>
+      <Display result={result} time={time} />
       <Bounce />
       <InputForm onSubmit={handleSubmit} />
     </>
