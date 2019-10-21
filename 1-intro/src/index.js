@@ -1,9 +1,12 @@
-import bounce from './bounce';
+import createBounce from './bounce';
 import fib from './fib';
 
 const form = document.getElementById('input-form');
 const input = document.getElementById('input');
 const display = document.getElementById('display');
+const canvas = document.getElementById('canvas');
+
+const bounce = createBounce(canvas);
 
 form.addEventListener('submit', e => {
   e.preventDefault();

@@ -1,0 +1,16 @@
+.InputForm > * {
+  font-size: 1.3em;
+  padding: 0.5em;
+}
+
+.InputForm > input {
+  background-color: #aaa;
+  border: none;
+}
+
+.InputForm > button {
+  background-color: salmon;
+  border: none;
+  border-radius: 0;
+  text-transform: uppercase;
+}
