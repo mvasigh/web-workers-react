@@ -14,7 +14,7 @@ function App() {
     <>
       <Title>
         Horrible Fib in{' '}
-        <span role="img" aria-label="React with sparkles">
+        <span role="img" aria-label="React">
           ✨React✨
         </span>
       </Title>
