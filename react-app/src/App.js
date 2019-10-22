@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Title, Bounce, Display, InputForm } from './components';
+import fib from './lib/fib';
 
 function App() {
   const [result, setResult] = useState();
@@ -7,7 +8,14 @@ function App() {
 
   const handleSubmit = (data, e) => {
     // Let's do this in a worker!
-    console.log(`Calculating at position ${data.position}...`);
+    const startTime = performance.now();
+
+    const { atPosition } = data;
+    const result = fib(atPosition);
+
+    const endTime = performance.now();
+    setTime(endTime - startTime);
+    setResult(result);
   };
 
   return (

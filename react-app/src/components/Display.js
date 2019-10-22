@@ -1,13 +1,22 @@
 import React from 'react';
 
-function Display({ result = null, time = null, ...props }) {
+function Display({
+  result = null,
+  time = null,
+  calculating = false,
+  ...props
+}) {
+  let displayOutput = `Result: ${result}, time: ${time && time.toFixed(2)} ms`;
 
   return (
-    <>
-      <p className="Display-result">{result}</p>
-      <p className="Display-time">{time && `${time.toFixed(2)} ms`}</p>
-    </>
+    <p className="Display-result">
+      {calculating
+        ? 'Calculating...'
+        : time && result
+        ? `Done! ${displayOutput}`
+        : ''}
+    </p>
   );
 }
 
-export default Display
+export default Display;
