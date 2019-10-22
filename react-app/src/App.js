@@ -7,9 +7,9 @@ function App() {
   const [time, setTime] = useState();
 
   const handleSubmit = (data, e) => {
-    // Let's do this in a worker!
     const startTime = performance.now();
 
+    // ! This code is blocking! 🚨 Fix it with a Web Worker
     const { atPosition } = data;
     const result = fib(atPosition);
 

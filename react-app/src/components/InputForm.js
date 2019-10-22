@@ -7,7 +7,7 @@ function InputForm({ onSubmit }) {
   const handleSubmit = e => {
     e.preventDefault();
     onSubmit({ atPosition: Number(position) }, e);
-    setPosition('')
+    setPosition('');
   };
 
   const handleChange = e => {

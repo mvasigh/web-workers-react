@@ -14,11 +14,11 @@ form.addEventListener('submit', e => {
   const value = input.valueAsNumber;
   const startTime = performance.now();
 
-  // Do the thing!
+  // ! This code is blocking! 🚨 Fix it with a Web Worker
   const result = fib(value);
 
   const endTime = performance.now();
-  const time = (endTime - startTime).toFixed(2)
+  const time = (endTime - startTime).toFixed(2);
   display.textContent = `Done! Result: ${result}, Time: ${time} ms`;
   input.value = '';
 });
