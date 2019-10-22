@@ -15,7 +15,8 @@ form.addEventListener('submit', e => {
   const startTime = performance.now();
 
   // Do the thing!
-  const result = fib(value);
+  const { result, count } = fib(value);
+  console.log(`${count} invocations of fib`)
 
   const endTime = performance.now();
   const time = (endTime - startTime).toFixed(2)
