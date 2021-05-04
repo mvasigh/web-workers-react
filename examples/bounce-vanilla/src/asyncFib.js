@@ -1,6 +1,8 @@
+import FibWorker from './fib.worker?worker'
+
 function asyncFib(data) {
   // Create a Web Worker
-  const fibWorker = new Worker('./fib.worker.js');
+  const fibWorker = new FibWorker();
 
   // Return a Promise that resolves to the value returned from Worker
   return new Promise((resolve, reject) => {

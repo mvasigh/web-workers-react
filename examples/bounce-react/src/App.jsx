@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Title, Bounce, Display, InputForm } from './components';
 import { useWorker } from './hooks';
-import FibWorker from './lib/fib.worker';
+import FibWorker from './lib/fib.worker?worker';
 
 function App() {
   const [result, setResult] = useState();

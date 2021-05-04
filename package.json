@@ -1,0 +1,21 @@
+{
+  "name": "web-workers-react",
+  "version": "0.0.0",
+  "description": "Welcome! 🎉 This is the companion repository for my talk on using the Web Workers API within your React application.",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "example": "cd ./examples/${npm_config_name} && npm install && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvasigh/web-workers-react.git"
+  },
+  "author": "Mehdi Vasigh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mvasigh/web-workers-react/issues"
+  },
+  "homepage": "https://github.com/mvasigh/web-workers-react#readme"
+}
