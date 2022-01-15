@@ -7,7 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "marked": "^2.0.3",
+    "marked": "^4.0.10",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-query": "^3.15.2"
